@@ -8,4 +8,5 @@ jobs:
       - name: script
         run: |
           echo "PR author: $TEST"
+          sleep 60
         shell: bash
