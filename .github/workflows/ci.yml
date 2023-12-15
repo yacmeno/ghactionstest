@@ -3,9 +3,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     env:
-      PR_AUTHOR: ${{ github.event.pull_request.user.email }}
+      TEST: ${{ github.ref_name }}
     steps:
       - name: script
         run: |
-          echo "PR author: $PR_AUTHOR"
+          echo "PR author: $TEST"
         shell: bash
