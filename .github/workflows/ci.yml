@@ -3,10 +3,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     env:
-      TEST: ${{ github.ref_name }}
+      BRANCHNAME: ${{ github.ref_name }}
     steps:
       - name: script
         run: |
-          echo "PR author: $TEST"
+          echo "BRANCH NAME: $BRANCHNAME"
           sleep 60
         shell: bash
